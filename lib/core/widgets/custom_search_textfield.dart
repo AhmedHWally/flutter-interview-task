@@ -6,8 +6,9 @@ import 'package:optomatica_task/core/utils/text_styles/app_text_styles.dart';
 import 'package:optomatica_task/view%20model/races_cubit/races_cubit.dart';
 
 class CustomSearchTextField extends StatefulWidget {
-  const CustomSearchTextField({super.key, required this.title});
+  const CustomSearchTextField({super.key, required this.title, this.onChanged});
   final String title;
+  final void Function(String)? onChanged;
   @override
   State<CustomSearchTextField> createState() => _CustomSearchTextFieldState();
 }
@@ -38,31 +39,18 @@ class _CustomSearchTextFieldState extends State<CustomSearchTextField> {
       },
       textInputAction: TextInputAction.done,
       keyboardType: TextInputType.text,
-      onSubmitted: (value) {
-        print(value);
-        setState(() {
-          isFocused = false;
-        });
-        BlocProvider.of<RacesCubit>(context).searchItems(value);
-      },
-      onChanged: (value) {
-        BlocProvider.of<RacesCubit>(context).searchItems(value);
-      },
-      onTapOutside: (event) {
-        setState(() {
-          isFocused = false;
-        });
-        FocusManager.instance.primaryFocus?.unfocus();
-      },
+      onChanged: widget.onChanged,
+      onTapOutside: widget.onChanged == null
+          ? null
+          : (event) {
+              setState(() {
+                isFocused = false;
+              });
+              FocusManager.instance.primaryFocus?.unfocus();
+            },
       decoration: InputDecoration(
           suffixIcon: IconButton(
-              onPressed: () {
-                print(controller.text);
-                FocusManager.instance.primaryFocus?.unfocus();
-                setState(() {
-                  isFocused = false;
-                });
-              },
+              onPressed: () {},
               icon: SvgPicture.asset(
                 'assets/images/searchIcon.svg',
                 colorFilter: ColorFilter.mode(

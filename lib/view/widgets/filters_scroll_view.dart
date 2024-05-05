@@ -7,6 +7,7 @@ import 'package:optomatica_task/core/utils/text_styles/app_text_styles.dart';
 import 'package:optomatica_task/view%20model/races_cubit/races_cubit.dart';
 import 'package:optomatica_task/view/widgets/date_bottom_sheet.dart';
 import 'package:optomatica_task/view/widgets/distance_bottom_sheet.dart';
+import 'package:optomatica_task/view/widgets/location_bottom_sheet.dart';
 import 'package:optomatica_task/view/widgets/reset_bottom_sheet.dart';
 import 'package:optomatica_task/view/widgets/type_bottom_sheet.dart';
 
@@ -93,9 +94,22 @@ class FiltersScrollView extends StatelessWidget {
                                     break;
                                   case 'Location':
                                     showModalBottomSheet(
+                                        isScrollControlled: true,
+                                        shape: const RoundedRectangleBorder(
+                                            borderRadius: BorderRadius.only(
+                                                topLeft: Radius.circular(8),
+                                                topRight: Radius.circular(8))),
                                         context: context,
                                         builder: (context) {
-                                          return const Text('dsadasdasd');
+                                          return Padding(
+                                            padding: EdgeInsets.only(
+                                                bottom: MediaQuery.of(context)
+                                                    .viewInsets
+                                                    .bottom),
+                                            child: LocationBottomSheet(
+                                              index: filter.key,
+                                            ),
+                                          );
                                         });
                                     break;
                                   case 'Distance':

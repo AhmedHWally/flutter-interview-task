@@ -20,12 +20,6 @@ class _RacesViewBodyState extends State<RacesViewBody>
   bool isLoading = false;
 
   @override
-  void dispose() {
-    BlocProvider.of<RacesCubit>(context).scrollController.dispose();
-    super.dispose();
-  }
-
-  @override
   bool get wantKeepAlive => true;
   @override
   Widget build(BuildContext context) {
@@ -68,12 +62,16 @@ class _RacesViewBodyState extends State<RacesViewBody>
             keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
             physics: const BouncingScrollPhysics(),
             slivers: [
-              const SliverPadding(
-                padding:
-                    EdgeInsets.only(top: 24, left: 16, right: 16, bottom: 16),
+              SliverPadding(
+                padding: const EdgeInsets.only(
+                    top: 24, left: 16, right: 16, bottom: 16),
                 sliver: SliverToBoxAdapter(
                   child: CustomSearchTextField(
-                      title: 'Search Race Name or Country'),
+                    title: 'Search Race Name or Country',
+                    onChanged: (value) {
+                      BlocProvider.of<RacesCubit>(context).searchItems(value);
+                    },
+                  ),
                 ),
               ),
               const SliverToBoxAdapter(

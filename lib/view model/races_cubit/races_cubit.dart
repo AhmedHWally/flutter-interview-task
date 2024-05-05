@@ -128,6 +128,16 @@ class RacesCubit extends Cubit<RacesState> {
     emit(RacesDataSuccess());
   }
 
+  void filterByLocation(List<String> locations) {
+    List<RaceModel> tempItems = [];
+    for (var item in locations) {
+      tempItems.addAll([...items.where((element) => element.country == item)]);
+    }
+    showedItems = tempItems;
+    isCurrentlyFiltring = true;
+    emit(RacesDataSuccess());
+  }
+
   void reset({int? index}) {
     if (index == null) {
       showedItems = items;
