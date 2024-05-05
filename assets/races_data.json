@@ -1,0 +1,154 @@
+[
+    {
+        "name": "TCS New York City Marathon",
+        "organizer": "New York Runners",
+        "date": "20241103",
+        "country": "United States of America",
+        "city": "New York",
+        "image": "newyork.jpg",
+        "type": "Real-time",
+        "distances": "21.1K,42.2K"
+    },
+    {
+        "name": "Great New York State Marathon",
+        "organizer": "New York Runners",
+        "date": "20241005",
+        "country": "United States of America",
+        "city": "New York",
+        "image": "newyork2.jpg",
+        "type": "Real-time",
+        "distances": "42.2K,108K"
+    },
+    {
+        "name": "Stockholm Marathon",
+        "organizer": "Stockholm Runners",
+        "date": "20240601",
+        "country": "Sweden",
+        "city": "Stockholm",
+        "image": "sweden.jpeg",
+        "type": "Real-time",
+        "distances": "1K,10K,42.2K"
+    },
+    {
+        "name": "Stockholm Half Marathon",
+        "date": "20240702",
+        "country": "Sweden",
+        "city": "Stockholm",
+        "image": "sweden2.jpg",
+        "type": "Real-time",
+        "distances": "10K,21.1K"
+    },
+    {
+        "name": "Madinaty Half Marathon | May 2024",
+        "organizer": "TriFactory",
+        "date": "20240810",
+        "country": "Egypt",
+        "city": "Madinaty",
+        "image": "madinaty.jpg",
+        "type": "Real-time",
+        "distances": "2K,5K,10K,21K,1K"
+    },
+    {
+        "name": "Great Road Tour",
+        "date": "20240903",
+        "country": "Australia",
+        "city": "Lorne",
+        "image": "lorne.jpeg",
+        "type": "Real-time",
+        "distances": "5K,16K,21.1K,42.2K"
+    },
+    {
+        "name": "Great New York State Marathon-2",
+        "date": "20241205",
+        "country": "United States of America",
+        "city": "New York",
+        "image": "newyork2.jpg",
+        "type": "Real-time",
+        "distances": "8K,42.2K"
+    },
+    {
+        "name": "Stockholm Marathon-2",
+        "organizer": "The Stockholm Runners",
+        "date": "20250401",
+        "country": "Sweden",
+        "city": "Stockholm",
+        "image": "sweden.jpeg",
+        "type": "Real-time",
+        "distances": "39.1K,50K,160.93K"
+    },
+    {
+        "name": "Stockholm Half Marathon-2",
+        "date": "20241122",
+        "country": "Sweden",
+        "city": "Stockholm",
+        "image": "sweden2.jpg",
+        "type": "Real-time",
+        "distances": "5K,10K,16K,21.1K,42.2K,70K"
+    },
+    {
+        "name": "The Egyptian Madinaty Second Half Marathon | May 2025",
+        "organizer": "TriFactory",
+        "date": "20250510",
+        "country": "Egypt",
+        "city": "Madinaty",
+        "image": "madinaty.jpg",
+        "type": "Real-time",
+        "distances": "24K,42.2K"
+    },
+    {
+        "name": "Mountain City Race",
+        "date": "20240803",
+        "country": "United States of America",
+        "city": "Tacoma",
+        "image": "tacoma.jpeg",
+        "type": "Real-time",
+        "distances": "5K,21.1K,42.2K"
+    },
+    {
+        "name": "Mountain City Winter Race",
+        "date": "20250123",
+        "country": "United States of America",
+        "city": "Tacoma",
+        "image": "tacoma.jpeg",
+        "type": "Virtual",
+        "distances": "47.5K,59.53K,117K,162.5K"
+    },
+    {
+        "name": "GIFU Race",
+        "date": "20250428",
+        "country": "Japan",
+        "city": "Gifu",
+        "image": "gifu.jpg",
+        "type": "Real-time",
+        "distances": "110K,160K,216K"
+    },
+    {
+        "name": "The Glow Run -5K",
+        "organizer": "TriFactory",
+        "date": "20240824",
+        "country": "Egypt",
+        "city": "Palm Hills",
+        "image": "glow.jpeg",
+        "type": "Virtual",
+        "distances": "5K"
+    },
+    {
+        "name": "Somabay Endurance Festival",
+        "organizer": "TriFactory",
+        "date": "20241010",
+        "country": "Egypt",
+        "city": "Somabay",
+        "image": "somabay.jpeg",
+        "type": "Real-time",
+        "distances": "1K,10K"
+    },
+    {
+        "name": "Pyramids Annual Race",
+        "date": "20241215",
+        "country": "Egypt",
+        "city": "Cairo",
+        "image": "pyramids.jpeg",
+        "type": "Real-time",
+        "distances": "2,5K"
+    }
+]
