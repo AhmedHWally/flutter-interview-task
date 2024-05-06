@@ -28,7 +28,7 @@ class RacesCubit extends Cubit<RacesState> {
   Future<void> getRaces() async {
     emit(RacesDataLoading());
     try {
-      await Future.delayed(const Duration(seconds: 3));
+      await Future.delayed(const Duration(seconds: 2));
       final String response =
           await rootBundle.loadString('assets/races_data.json');
       final data = await json.decode(response);
