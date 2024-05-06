@@ -50,15 +50,26 @@ class _CustomSearchTextFieldState extends State<CustomSearchTextField> {
             },
       decoration: InputDecoration(
           suffixIcon: IconButton(
-              onPressed: () {},
-              icon: SvgPicture.asset(
-                'assets/images/searchIcon.svg',
-                colorFilter: ColorFilter.mode(
-                    isFocused
-                        ? AppColors.secondaryColor
-                        : const Color(0xff1C325F),
-                    BlendMode.srcIn),
-              )),
+              onPressed: controller.text.isNotEmpty && widget.onChanged != null
+                  ? () {
+                      controller.clear();
+                      BlocProvider.of<RacesCubit>(context).searchItems('');
+                      FocusManager.instance.primaryFocus?.unfocus();
+                    }
+                  : null,
+              icon: controller.text.isNotEmpty && widget.onChanged != null
+                  ? const Icon(
+                      Icons.close_rounded,
+                      color: AppColors.secondaryColor,
+                    )
+                  : SvgPicture.asset(
+                      'assets/images/searchIcon.svg',
+                      colorFilter: ColorFilter.mode(
+                          isFocused
+                              ? AppColors.secondaryColor
+                              : const Color(0xff1C325F),
+                          BlendMode.srcIn),
+                    )),
           hintText: widget.title,
           hintStyle: AppTextStyles.style16w400,
           contentPadding:

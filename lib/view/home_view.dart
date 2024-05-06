@@ -26,10 +26,10 @@ class HomeView extends StatelessWidget {
             body: const TabBarView(
               children: [
                 Center(
-                  child: Text(""),
+                  child: Text("Hello ^-^"),
                 ),
                 Center(
-                  child: Text(""),
+                  child: Text("Hello ^-^"),
                 ),
                 RacesViewBody()
               ],

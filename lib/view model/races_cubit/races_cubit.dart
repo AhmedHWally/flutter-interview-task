@@ -28,9 +28,7 @@ class RacesCubit extends Cubit<RacesState> {
   Future<void> getRaces() async {
     emit(RacesDataLoading());
     try {
-      // print('start');
-      // await Future.delayed(const Duration(seconds: 5));
-      // print('end');
+      await Future.delayed(const Duration(seconds: 3));
       final String response =
           await rootBundle.loadString('assets/races_data.json');
       final data = await json.decode(response);
@@ -50,8 +48,6 @@ class RacesCubit extends Cubit<RacesState> {
   }
 
   void pagination() {
-    print(items.length);
-    print(showedItems.length);
     while (index < items.length &&
         showedItems.length != items.length &&
         index < numberOfItems &&

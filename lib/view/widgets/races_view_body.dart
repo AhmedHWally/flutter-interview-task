@@ -104,7 +104,9 @@ class _RacesViewBodyState extends State<RacesViewBody>
         );
       } else {
         return const Center(
-          child: CircularProgressIndicator(),
+          child: CircularProgressIndicator(
+            color: AppColors.mainColor,
+          ),
         );
       }
     });
