@@ -1,16 +1,11 @@
-# optomatica_task
+# flutter_interview_task
 
-A new Flutter project.
+A given task that i managed to complete and move forward because of the great work that i have done inside the app from the ui till the logic.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+I managed to retrieve the locally stored json data and apply pagination and also applied the filtration logic on that data as well as creating a great ui.
 
-A few resources to get you started if this is your first Flutter project:
+please enjoy watching this video showing my work.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+https://drive.google.com/file/d/1c3tfyspSx7BXaqomy4xebLQ8_J_0y5bp/view?usp=sharing
